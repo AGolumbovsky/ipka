@@ -16,6 +16,8 @@ namespace ConsoleTest
             IPHostEntry ipEntry = Dns.GetHostEntry(strHostName);
             IPAddress[] addr = ipEntry.AddressList;
 
+            Console.WriteLine("This is only a test, no need to panic! But if you must panic, please do, not like we all don't have a good reason");
+
             for (int i = 0; i < addr.Length; i++)
             {
                 Console.WriteLine("IP Address {0}: {1} ", i, addr[i].ToString());
