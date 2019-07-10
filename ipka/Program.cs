@@ -17,7 +17,6 @@ namespace ConsoleTest
                 Console.WriteLine("Some kind of na error or some shit: " + ex.Message);
             }
 
-
            /* String strHostName = string.Empty;
             // Getting Ip address of local machine...
             // First get the host name of local machine.
