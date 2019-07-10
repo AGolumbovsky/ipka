@@ -8,15 +8,15 @@ namespace ConsoleTest
     {
         static void Main(string[] args)
         {
+            string adapter      = args[0];
+            string statOrDyn    = args[1];
+            string addr      = args[2];
+            string gateway      = args[3];
+
             try
             {
-                string addr = "10.10.10.56";
-
-                Console.WriteLine("the first argument is: " + args[0]);
-
-                Console.WriteLine("netsh interface ip set address 'Ethernet 6'  {0} 255.255.255.0 10.10.10.1", addr);
-
-                Process.Start("netsh interface ip set address 'Ethernet 6' {addr} 255.255.255.0 10.10.10.1");
+                Console.WriteLine("netsh interface ip set address {0} {1} {2} {3}", adapter, statOrDyn, addr, gateway);
+                Process.Start($"netsh interface ip set address {adapter} {statOrDyn} {addr} {gateway}");
             }
             catch(Exception ex)
             {
