@@ -10,7 +10,7 @@ namespace ConsoleTest
         {
             string adapter      = args[0];
             string statOrDyn    = args[1];
-            string addr      = args[2];
+            string addr         = args[2];
             string gateway      = args[3];
 
             try
