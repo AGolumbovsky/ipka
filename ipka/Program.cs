@@ -8,7 +8,8 @@ namespace ConsoleTest
     {
         static void Main(string[] args)
         {
-            string adapter      = args[0];
+            string adapter = IsNullOrEmpty(args[0]) ? "Ethernet 8" : args[0]; // not working yet
+            //string adapter      = args[0];
             string statOrDyn    = args[1];
             string addr         = args[2];
             string gateway      = args[3];
